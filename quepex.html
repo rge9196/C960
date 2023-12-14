@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #typewriter h1 {
+            text-align: center;
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered" id="typewriter">
+        <h1></h1>
+    </div>
+
+    <script>
+        const text = "hola piqui...";
+        const typingSpeed = 150; // milliseconds
+        let i = 0;
+
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("typewriter").getElementsByTagName("h1")[0].innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, typingSpeed);
+            }
+        }
+
+        window.onload = typeWriter; // Start the effect when the window loads
+    </script>
+</body>
+</html>
