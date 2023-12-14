@@ -1,7 +1,7 @@
 
 const text = "Wake up R@binee and Parchoooou...";
 const text2 = "The matrix has you...";
-const text3 = "Follow the white rabbit."; // Replace with your actual text3 content
+const text3 = "Follow the white rabbit.          :p   "; // Replace with your actual text3 content
 const typingSpeed = 150; // milliseconds
 let i = 0;
 let currentText = 1;
